@@ -1,0 +1,56 @@
+.gs-container {
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+@include mq(tablet) {
+    .gs-container {
+        max-width: 740px;
+    }
+}
+
+@include mq(desktop) {
+    .gs-container {
+        max-width: 980px;
+    }
+}
+
+@include mq(leftCol) {
+    .gs-container {
+        max-width: 1140px;
+    }
+}
+
+@include mq(wide) {
+    .gs-container {
+        max-width: 1300px;
+    }
+}
+
+.preppers__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: $c-yellow;
+}
+
+.preppers__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('@@assetPath@@/assets/images/static.png');
+    background-position: 30% center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+
+    @include mq(tablet) {
+        background-size: contain;
+        background-position: center 40%;
+    }
+}
