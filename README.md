@@ -1,7 +1,5 @@
-100 Days of Trump
-========================
-
-What's that Trump guy up to anyway
+Main Media for Preppers
+=======================
 
 ## Installation
 
